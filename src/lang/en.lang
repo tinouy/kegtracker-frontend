@@ -1,0 +1,282 @@
+# KegTracker - English Translations
+# Authentication and User
+Login=Login
+Logout=Logout
+Email=Email
+Password=Password
+Current password=Current password
+New password=New password
+Change password=Change password
+Confirm password=Confirm password
+Forgot password=Forgot password?
+Reset password=Reset password
+Register=Register
+Profile=Profile
+User=User
+Users=Users
+Role=Role
+Loading=Loading...
+Error=Error
+Success=Success
+
+# Navigation and Menus
+Dashboard=Dashboard
+Kegs=Kegs
+Breweries=Breweries
+Admin Panel=Admin Panel
+Back=Back
+Close=Close
+Save=Save
+Edit=Edit
+Delete=Delete
+Create=Create
+View=View
+Actions=Actions
+Details=Details
+
+# Kegs
+Keg details=Keg Details
+Keg name=Keg Name
+Name=Name
+Type=Type
+State=State
+Connector=Connector
+Capacity=Capacity
+Current content=Current content
+Beer type=Beer type
+Location=Location
+Edit keg=Edit keg
+Create keg=Create keg
+Delete keg=Delete keg
+
+# Keg states
+In use=In use
+Empty=Empty
+Dirty=Dirty
+Clean=Clean
+Ready=Ready
+
+# Keg types
+Keg=Keg
+Corni=Corni
+
+# Connectors
+Ball Lock=Ball Lock
+Pin Lock=Pin Lock
+
+# Breweries
+Brewery=Brewery
+Brewery name=Brewery name
+Brewery admin=Brewery admin
+Manage brewery=Manage brewery
+
+# Users and roles
+Global admin=Global admin
+Admin=Admin
+Moderator=Moderator
+Invite user=Invite user
+Send invite=Send invite
+Invite sent=Invite sent
+Delete user=Delete user
+
+# Forms and validation
+Required=is required
+Name is required=Name is required
+Email is required=Email is required
+Password is required=Password is required
+Invalid email=Invalid email
+Passwords do not match=Passwords do not match
+Field is required=This field is required
+
+# Success messages
+Saved successfully=Saved successfully
+Updated successfully=Updated successfully
+Created successfully=Created successfully
+Deleted successfully=Deleted successfully
+Password changed successfully=Password changed successfully
+Invitation sent successfully=Invitation sent successfully
+
+# Confirmation messages
+Confirm delete=Are you sure you want to delete?
+Are you sure=Are you sure?
+This action cannot be undone=This action cannot be undone
+
+# Avatar and profile
+Change avatar=Change avatar
+Confirm change=Confirm change
+Upload image=Upload image
+
+# Initialization
+Initialize=Initialize
+Initialize application=Initialize application
+Already initialized=Application already initialized
+Redirecting=Redirecting...
+
+# QR and PDF
+Download QR PDF=Download QR PDF
+Generate QR=Generate QR
+Print QR=Print QR
+
+# History
+State history=State history
+History=History
+Date=Date
+Previous state=Previous state
+New state=New state
+
+# Common errors
+Network error=Network error
+Server error=Server error
+Access denied=Access denied
+Not found=Not found
+Invalid credentials=Invalid credentials
+Session expired=Session expired
+
+# Email and recovery
+Reset email sent=A password reset email has been sent
+Send reset link=Send reset link
+Check your email=Check your email
+Enter your email=Enter your email
+
+# General
+Yes=Yes
+No=No
+Cancel=Cancel
+Continue=Continue
+Finish=Finish
+Next=Next
+Previous=Previous
+Search=Search
+Filter=Filter
+Sort=Sort
+Export=Export
+Import=Import
+Print=Print
+Download=Download
+Upload=Upload
+
+# Additional specific
+Not assigned=Not assigned
+Access your KegTracker account=Access your KegTracker account
+Please complete all fields=Please complete all fields
+Login error=Login error
+Saved=Saved
+Deleted=Deleted
+View detail=View detail
+Delete error=Delete error
+Language=Language
+User menu=User menu
+
+# Roles
+User=User
+Moderator=Moderator
+Administrator=Administrator
+Global administrator=Global administrator
+
+# UserForm
+Edit user=Edit user
+New user=New user
+Email and password are required=Email and password are required
+No permissions error=You don't have permissions to create users or the endpoint is incorrect
+Cancel=Cancel
+Saving=Saving...
+Update=Update
+Create=Create
+
+# Keg states specific
+In use=In use
+Empty=Empty
+Dirty=Dirty
+Clean=Clean
+Ready for use=Ready for use
+
+# Connectors specific
+S Connector=S Connector
+A Connector=A Connector
+G Connector=G Connector
+
+# General UI
+Toggle password visibility=Toggle password visibility
+Spanish=Spanish
+English=English
+
+# KegForm validations
+Name is required=Name is required
+Current content cannot be greater than capacity=Current content cannot be greater than capacity
+Please select a brewery=Please select a brewery
+Cannot determine brewery error=Error: Cannot determine brewery. Contact administrator
+Keg updated successfully=Keg updated successfully
+Keg created successfully=Keg created successfully
+Capacity L=Capacity (L)
+Current content L=Current content (L)
+Search brewery=Search brewery...
+No breweries found=No breweries found
+Loading breweries=Loading breweries...
+
+# Register & Auth
+Please enter your email=Please enter your email
+Error sending recovery email=Error sending recovery email
+Checking token=Checking token...
+Invalid or expired token=Invalid or expired token
+Check token before showing form=Check token before showing form
+Password confirmation=Password confirmation
+
+# General errors and states
+Not found=Not found
+Not assigned=Not assigned
+Unknown=Unknown
+Checking=Checking...
+
+# Global Admin Security
+Cannot modify global admin=Cannot modify global admin users
+Cannot delete global admin=Cannot delete global admin users
+Only global admin can modify global admin users=Only global admin can modify global admin users
+Only global admin can delete global admin users=Only global admin can delete global admin users
+Global admin cannot delete themselves=Global admin cannot delete themselves
+Global admin cannot deactivate themselves=Global admin cannot deactivate themselves
+
+# States and additional actions
+Activate=Activate
+Deactivate=Deactivate
+Delete confirm=Are you sure you want to delete this user?
+Activated ok=User activated
+Deactivated ok=User deactivated
+Deleted ok=User deleted
+Saved ok=Saved
+
+# Active field
+Active=Active
+
+# Invitations
+Invite user=Invite user
+Invite user by email=Invite user by email
+Send invite=Send invitation
+
+# Brewery administration
+Manage brewery=Manage brewery
+Add keg=Add keg
+
+# Keg types
+Keg=Keg
+Corni=Corni
+All types=All types
+
+# Keg states
+In use=In use
+Empty=Empty
+Dirty=Dirty
+Clean=Clean
+Ready=Ready
+All states=All states
+
+# Keg connectors
+S connector=S connector
+A connector=A connector
+G connector=G connector
+Ball Lock=Ball Lock
+Pin Lock=Pin Lock
+
+# Data labels in tables
+Type=Type
+Connector=Connector
+State=State

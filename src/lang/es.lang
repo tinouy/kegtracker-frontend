@@ -1,0 +1,282 @@
+# KegTracker - Traducciones en Español
+# Autenticación y Usuario
+Login=Iniciar Sesión
+Logout=Cerrar Sesión
+Email=Email
+Password=Contraseña
+Current password=Contraseña actual
+New password=Nueva contraseña
+Change password=Cambiar contraseña
+Confirm password=Confirmar contraseña
+Forgot password=¿Olvidaste tu contraseña?
+Reset password=Restablecer contraseña
+Register=Registrarse
+Profile=Perfil
+User=Usuario
+Users=Usuarios
+Role=Rol
+Loading=Cargando...
+Error=Error
+Success=Éxito
+
+# Navegación y Menús
+Dashboard=Panel Principal
+Kegs=Barriles
+Breweries=Cervecerías
+Admin Panel=Panel de Administración
+Back=Volver
+Close=Cerrar
+Save=Guardar
+Edit=Editar
+Delete=Eliminar
+Create=Crear
+View=Ver
+Actions=Acciones
+Details=Detalles
+
+# Barriles
+Keg details=Detalle de Barril
+Keg name=Nombre del Barril
+Name=Nombre
+Type=Tipo
+State=Estado
+Connector=Conector
+Capacity=Capacidad
+Current content=Contenido actual
+Beer type=Tipo de cerveza
+Location=Ubicación
+Edit keg=Editar barril
+Create keg=Crear barril
+Delete keg=Eliminar barril
+
+# Estados de barriles
+In use=En uso
+Empty=Vacío
+Dirty=Sucio
+Clean=Limpio
+Ready=Listo para usar
+
+# Tipos de barriles
+Keg=Keg
+Corni=Corni
+
+# Conectores
+Ball Lock=Ball Lock
+Pin Lock=Pin Lock
+
+# Cervecerías
+Brewery=Cervecería
+Brewery name=Nombre de cervecería
+Brewery admin=Administrador de cervecería
+Manage brewery=Administrar cervecería
+
+# Usuarios y roles
+Global admin=Administrador global
+Admin=Administrador
+Moderator=Moderador
+Invite user=Invitar usuario
+Send invite=Enviar invitación
+Invite sent=Invitación enviada
+Delete user=Eliminar usuario
+
+# Formularios y validación
+Required=es obligatorio
+Name is required=El nombre es obligatorio
+Email is required=El email es obligatorio
+Password is required=La contraseña es obligatoria
+Invalid email=Email inválido
+Passwords do not match=Las contraseñas no coinciden
+Field is required=Este campo es obligatorio
+
+# Mensajes de éxito
+Saved successfully=Guardado correctamente
+Updated successfully=Actualizado correctamente
+Created successfully=Creado correctamente
+Deleted successfully=Eliminado correctamente
+Password changed successfully=Contraseña cambiada correctamente
+Invitation sent successfully=Invitación enviada correctamente
+
+# Mensajes de confirmación
+Confirm delete=¿Estás seguro que quieres eliminar?
+Are you sure=¿Estás seguro?
+This action cannot be undone=Esta acción no se puede deshacer
+
+# Avatar y perfil
+Change avatar=Cambiar avatar
+Confirm change=Confirmar cambio
+Upload image=Subir imagen
+
+# Inicialización
+Initialize=Inicializar
+Initialize application=Inicializar aplicación
+Already initialized=La aplicación ya fue inicializada
+Redirecting=Redirigiendo...
+
+# QR y PDF
+Download QR PDF=Descargar QR en PDF
+Generate QR=Generar QR
+Print QR=Imprimir QR
+
+# Historial
+State history=Historial de estados
+History=Historial
+Date=Fecha
+Previous state=Estado anterior
+New state=Nuevo estado
+
+# Errores comunes
+Network error=Error de conexión
+Server error=Error del servidor
+Access denied=Acceso denegado
+Not found=No encontrado
+Invalid credentials=Credenciales inválidas
+Session expired=Sesión expirada
+
+# Email y recuperación
+Reset email sent=Se ha enviado un email para restablecer la contraseña
+Send reset link=Enviar enlace de restablecimiento
+Check your email=Revisa tu email
+Enter your email=Ingresa tu email
+
+# General
+Yes=Sí
+No=No
+Cancel=Cancelar
+Continue=Continuar
+Finish=Finalizar
+Next=Siguiente
+Previous=Anterior
+Search=Buscar
+Filter=Filtrar
+Sort=Ordenar
+Export=Exportar
+Import=Importar
+Print=Imprimir
+Download=Descargar
+Upload=Subir
+
+# Adicionales específicos
+Not assigned=Sin asignar
+Access your KegTracker account=Accede a tu cuenta de KegTracker
+Please complete all fields=Por favor completa todos los campos
+Login error=Error al iniciar sesión
+Saved=Guardado
+Deleted=Eliminado
+View detail=Ver detalle
+Delete error=Error al eliminar
+Language=Idioma
+User menu=Menú de usuario
+
+# Roles
+User=Usuario
+Moderator=Moderador
+Administrator=Administrador
+Global administrator=Administrador global
+
+# UserForm
+Edit user=Editar usuario
+New user=Nuevo usuario
+Email and password are required=Email y contraseña son obligatorios
+No permissions error=No tienes permisos para crear usuarios o el endpoint es incorrecto
+Cancel=Cancelar
+Saving=Guardando...
+Update=Actualizar
+Create=Crear
+
+# Estados de barriles específicos
+In use=En uso
+Empty=Vacío
+Dirty=Sucio
+Clean=Limpio
+Ready for use=Listo para usar
+
+# Conectores específicos
+S Connector=Conector S
+A Connector=Conector A
+G Connector=Conector G
+
+# General UI
+Toggle password visibility=Mostrar/ocultar contraseña
+Spanish=Español
+English=Inglés
+
+# Validaciones KegForm
+Name is required=El nombre es obligatorio
+Current content cannot be greater than capacity=El contenido actual no puede ser mayor que la capacidad
+Please select a brewery=Por favor selecciona una cervecería
+Cannot determine brewery error=Error: No se puede determinar la cervecería. Contacta al administrador
+Keg updated successfully=Barril actualizado correctamente
+Keg created successfully=Barril creado correctamente
+Capacity L=Capacidad (L)
+Current content L=Contenido actual (L)
+Search brewery=Buscar cervecería...
+No breweries found=No se encontraron cervecerías
+Loading breweries=Cargando cervecerías...
+
+# Register & Auth
+Please enter your email=Por favor ingresa tu email
+Error sending recovery email=Error al enviar el email de recuperación
+Checking token=Verificando token...
+Invalid or expired token=Token inválido o expirado
+Check token before showing form=Chequear el token antes de mostrar el formulario
+Password confirmation=Confirmar contraseña
+
+# General errors and states
+Not found=No encontrado
+Not assigned=Sin asignar
+Unknown=Desconocido
+Checking=Verificando...
+
+# Seguridad Global Admin
+Cannot modify global admin=No puedes modificar usuarios administradores globales
+Cannot delete global admin=No puedes eliminar usuarios administradores globales
+Only global admin can modify global admin users=Solo el administrador global puede modificar usuarios administradores globales
+Only global admin can delete global admin users=Solo el administrador global puede eliminar usuarios administradores globales
+Global admin cannot delete themselves=El administrador global no puede eliminarse a sí mismo
+Global admin cannot deactivate themselves=El administrador global no puede desactivarse a sí mismo
+
+# Estados y acciones adicionales
+Activate=Activar
+Deactivate=Desactivar
+Delete confirm=¿Estás seguro que quieres eliminar este usuario?
+Activated ok=Usuario activado
+Deactivated ok=Usuario desactivado
+Deleted ok=Usuario eliminado
+Saved ok=Guardado
+
+# Campo activo
+Active=Activo
+
+# Invitaciones
+Invite user=Invitar usuario
+Invite user by email=Invitar usuario por email
+Send invite=Enviar invitación
+
+# Administración de cervecería
+Manage brewery=Administrar cervecería
+Add keg=Agregar barril
+
+# Tipos de barriles
+Keg=Keg
+Corni=Corni
+All types=Todos los tipos
+
+# Estados de barriles
+In use=En uso
+Empty=Vacío
+Dirty=Sucio
+Clean=Limpio
+Ready=Pronto para usar
+All states=Todos los estados
+
+# Conectores de barriles
+S connector=Conector S
+A connector=Conector A
+G connector=Conector G
+Ball Lock=Ball Lock
+Pin Lock=Pin Lock
+
+# Etiquetas de datos en tablas
+Type=Tipo
+Connector=Conector
+State=Estado
