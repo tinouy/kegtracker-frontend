@@ -34,6 +34,13 @@ View=View
 Actions=Actions
 Details=Details
 
+# Themes
+Theme=Theme
+Dark mode=Dark mode
+Light mode=Light mode
+Dark=Dark
+Light=Light
+
 # Kegs
 Keg details=Keg Details
 Keg name=Keg Name

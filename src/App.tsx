@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import { LanguageProvider } from './context/LanguageContext';
+import { ThemeProvider } from './context/ThemeContext';
 import ProtectedRoute from './components/ProtectedRoute';
 import UserMenu from './components/UserMenu';
 import Profile from './pages/Profile';
@@ -21,7 +22,7 @@ import ResetPassword from './pages/ResetPassword';
 import { useAuth } from './context/AuthContext';
 
 // Material UI imports
-import { AppBar, Toolbar, IconButton, Typography, Drawer, List, ListItem, ListItemIcon, ListItemText, CssBaseline, Box, Divider, useTheme, useMediaQuery } from '@mui/material';
+import { AppBar, Toolbar, IconButton, Typography, Drawer, List, ListItem, ListItemIcon, ListItemText, Box, Divider, useTheme as useMuiTheme, useMediaQuery } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import HomeIcon from '@mui/icons-material/Home';
 import LocalDrinkIcon from '@mui/icons-material/LocalDrink';
@@ -39,7 +40,7 @@ const menuItems = [
 ];
 
 function AppLayout({ children }: { children: React.ReactNode }) {
-  const theme = useTheme();
+  const theme = useMuiTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const [mobileOpen, setMobileOpen] = useState(false);
   const { user } = useAuth();
@@ -66,9 +67,38 @@ function AppLayout({ children }: { children: React.ReactNode }) {
       <Divider />
       <List>
         {menuItems.filter(item => item.roles.includes(user.role)).map((item) => (
-          <ListItem key={item.text} component={Link} to={item.path} onClick={() => setMobileOpen(false)}>
-            <ListItemIcon>{item.icon}</ListItemIcon>
-            <ListItemText primary={item.text} />
+          <ListItem 
+            key={item.text} 
+            component={Link} 
+            to={item.path} 
+            onClick={() => setMobileOpen(false)}
+            sx={{
+              color: 'text.primary',
+              textDecoration: 'none',
+              '&:hover': {
+                backgroundColor: 'action.hover',
+              },
+              '&:visited': {
+                color: 'text.primary',
+              },
+              '&:link': {
+                color: 'text.primary',
+              },
+              '&:active': {
+                color: 'text.primary',
+              }
+            }}
+          >
+            <ListItemIcon sx={{ color: 'text.primary' }}>{item.icon}</ListItemIcon>
+            <ListItemText 
+              primary={item.text} 
+              sx={{ 
+                color: 'text.primary',
+                '& .MuiTypography-root': {
+                  color: 'text.primary'
+                }
+              }} 
+            />
           </ListItem>
         ))}
       </List>
@@ -77,7 +107,6 @@ function AppLayout({ children }: { children: React.ReactNode }) {
 
   return (
     <Box sx={{ display: 'flex' }}>
-      <CssBaseline />
       <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}>
         <Toolbar>
           <IconButton color="inherit" edge="start" onClick={handleDrawerToggle} sx={{ mr: 2, display: { md: 'none' } }}>
@@ -114,11 +143,12 @@ function AppLayout({ children }: { children: React.ReactNode }) {
 
 function App() {
   return (
-    <LanguageProvider>
-      <AuthProvider>
-        <BrowserRouter>
-          <AppLayout>
-            <Routes>
+    <ThemeProvider>
+      <LanguageProvider>
+        <AuthProvider>
+          <BrowserRouter>
+            <AppLayout>
+              <Routes>
               <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
               <Route path="/" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
               <Route path="/kegs" element={<ProtectedRoute><KegList /></ProtectedRoute>} />
@@ -134,11 +164,12 @@ function App() {
               <Route path="/admin/kegs" element={<ProtectedRoute roles={["global_admin","admin","moderator"]}><AdminKegs /></ProtectedRoute>} />
               <Route path="/keg/:id" element={<ProtectedRoute><KegDetail /></ProtectedRoute>} />
               <Route path="/brewery-admin" element={<ProtectedRoute roles={["admin","moderator","global_admin"]}><BreweryAdmin /></ProtectedRoute>} />
-            </Routes>
-          </AppLayout>
-        </BrowserRouter>
-      </AuthProvider>
-    </LanguageProvider>
+              </Routes>
+            </AppLayout>
+          </BrowserRouter>
+        </AuthProvider>
+      </LanguageProvider>
+    </ThemeProvider>
   );
 }
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
+import { useAppTheme } from '../hooks/useAppTheme';
 import { useLang } from '../hooks/useLang';
 import { useNavigate } from 'react-router-dom';
 import {
@@ -23,11 +24,14 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import LockIcon from '@mui/icons-material/Lock';
 import LanguageIcon from '@mui/icons-material/Language';
 import PhotoCamera from '@mui/icons-material/PhotoCamera';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import LightModeIcon from '@mui/icons-material/LightMode';
 
 const UserMenu: React.FC = () => {
   const t = useLang();
   const { user, logout } = useAuth();
   const { language, setLanguage } = useLanguage();
+  const { isDarkMode, toggleTheme } = useAppTheme();
   const navigate = useNavigate();
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
@@ -117,6 +121,13 @@ const UserMenu: React.FC = () => {
         <MenuItem onClick={handleProfile}>
           <ListItemIcon><PersonIcon fontSize="small" /></ListItemIcon>
           {t('Profile')}
+        </MenuItem>
+        <Divider />
+        <MenuItem onClick={toggleTheme}>
+          <ListItemIcon>
+            {isDarkMode ? <LightModeIcon fontSize="small" /> : <DarkModeIcon fontSize="small" />}
+          </ListItemIcon>
+          {isDarkMode ? t('Light mode') : t('Dark mode')}
         </MenuItem>
         <Divider />
         <MenuItem>

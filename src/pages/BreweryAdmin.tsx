@@ -162,7 +162,7 @@ const BreweryAdmin: React.FC = () => {
               pageSizeOptions={[10, 20, 50]}
               initialState={{ pagination: { paginationModel: { pageSize: 10 } } }}
               disableRowSelectionOnClick
-              sx={{ background: '#fff', borderRadius: 2, boxShadow: 2 }}
+              sx={{ bgcolor: 'background.paper', borderRadius: 2, boxShadow: 2 }}
               getRowId={row => row.id}
             />
           </Box>
@@ -213,7 +213,7 @@ const BreweryAdmin: React.FC = () => {
               pageSizeOptions={[10, 20, 50]}
               initialState={{ pagination: { paginationModel: { pageSize: 10 } } }}
               disableRowSelectionOnClick
-              sx={{ background: '#fff', borderRadius: 2, boxShadow: 2 }}
+              sx={{ bgcolor: 'background.paper', borderRadius: 2, boxShadow: 2 }}
               getRowId={row => row.id}
             />
           </Box>
