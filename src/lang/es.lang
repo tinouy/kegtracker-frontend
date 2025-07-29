@@ -34,6 +34,13 @@ View=Ver
 Actions=Acciones
 Details=Detalles
 
+# Temas
+Theme=Tema
+Dark mode=Modo oscuro
+Light mode=Modo claro
+Dark=Oscuro
+Light=Claro
+
 # Barriles
 Keg details=Detalle de Barril
 Keg name=Nombre del Barril

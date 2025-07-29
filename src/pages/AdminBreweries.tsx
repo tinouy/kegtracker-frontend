@@ -129,7 +129,7 @@ const AdminBreweries: React.FC = () => {
         pageSizeOptions={[10, 20, 50]}
         initialState={{ pagination: { paginationModel: { pageSize: 10 } } }}
         disableRowSelectionOnClick
-        sx={{ background: '#fff', borderRadius: 2, boxShadow: 2 }}
+        sx={{ bgcolor: 'background.paper', borderRadius: 2, boxShadow: 2 }}
         getRowId={row => row.id}
       />
       <Fab color="primary" aria-label="add" sx={{ position: 'fixed', bottom: 32, right: 32, zIndex: 1200 }} onClick={() => { setEditBrewery(null); setShowForm(true); }}>

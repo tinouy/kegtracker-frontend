@@ -186,38 +186,38 @@ const KegDetail: React.FC = () => {
               <Typography variant="h5" fontWeight="bold">{keg.name}</Typography>
             </Box>
             <Box display="flex" flexWrap="wrap" gap={2}>
-              <Box display="flex" alignItems="center" gap={1} bgcolor="#f5f5f5" px={2} py={1} borderRadius={2} minWidth={140}>
+              <Box display="flex" alignItems="center" gap={1} bgcolor="action.hover" px={2} py={1} borderRadius={2} minWidth={140}>
                 <InventoryIcon color="info" />
                 <Typography fontWeight={500}>{t('Type')}:</Typography>
                 <Typography>{getTypeLabel(keg.type)}</Typography>
               </Box>
-              <Box display="flex" alignItems="center" gap={1} bgcolor="#f5f5f5" px={2} py={1} borderRadius={2} minWidth={140}>
+              <Box display="flex" alignItems="center" gap={1} bgcolor="action.hover" px={2} py={1} borderRadius={2} minWidth={140}>
                 <LocalBarIcon color="secondary" />
                 <Typography fontWeight={500}>{t('Connector')}:</Typography>
                 <Typography>{getConnectorLabel(keg.connector)}</Typography>
               </Box>
-              <Box display="flex" alignItems="center" gap={1} bgcolor="#f5f5f5" px={2} py={1} borderRadius={2} minWidth={140}>
+              <Box display="flex" alignItems="center" gap={1} bgcolor="action.hover" px={2} py={1} borderRadius={2} minWidth={140}>
                 <FilterListIcon color="success" />
                 <Typography fontWeight={500}>{t('capacity') || 'Capacidad'}:</Typography>
                 <Typography>{keg.capacity} L</Typography>
               </Box>
-              <Box display="flex" alignItems="center" gap={1} bgcolor="#f5f5f5" px={2} py={1} borderRadius={2} minWidth={140}>
+              <Box display="flex" alignItems="center" gap={1} bgcolor="action.hover" px={2} py={1} borderRadius={2} minWidth={140}>
                 <DownloadIcon color="action" />
                 <Typography fontWeight={500}>{t('current_content') || 'Contenido actual'}:</Typography>
                 <Typography>{keg.current_content} L</Typography>
               </Box>
-              <Box display="flex" alignItems="center" gap={1} bgcolor="#f5f5f5" px={2} py={1} borderRadius={2} minWidth={180}>
+              <Box display="flex" alignItems="center" gap={1} bgcolor="action.hover" px={2} py={1} borderRadius={2} minWidth={180}>
                 <LocalDrinkIcon color="primary" />
                 <Typography fontWeight={500}>{t('beer_type') || 'Tipo de cerveza'}:</Typography>
                 <Typography>{keg.beer_type}</Typography>
               </Box>
-              <Box display="flex" alignItems="center" gap={1} bgcolor="#f5f5f5" px={2} py={1} borderRadius={2} minWidth={180}>
+              <Box display="flex" alignItems="center" gap={1} bgcolor="action.hover" px={2} py={1} borderRadius={2} minWidth={180}>
                 <BusinessIcon color="warning" />
                 <Typography fontWeight={500}>{t('brewery') || 'Cervecería'}:</Typography>
                 <Typography>{keg.brewery_name || t('Not assigned')}</Typography>
               </Box>
               {keg.user_email && (
-                <Box display="flex" alignItems="center" gap={1} bgcolor="#f5f5f5" px={2} py={1} borderRadius={2} minWidth={180}>
+                <Box display="flex" alignItems="center" gap={1} bgcolor="action.hover" px={2} py={1} borderRadius={2} minWidth={180}>
                   <PersonIcon color="info" />
                   <Typography fontWeight={500}>{t('user') || 'Usuario'}:</Typography>
                   <Typography>{keg.user_email}</Typography>

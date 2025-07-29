@@ -66,7 +66,7 @@ const Initialize: React.FC = () => {
 
   if (checking) {
     return (
-      <Box minHeight="100vh" display="flex" alignItems="center" justifyContent="center" bgcolor="#f5f5f5">
+      <Box minHeight="100vh" display="flex" alignItems="center" justifyContent="center" bgcolor="background.default">
         <CircularProgress />
       </Box>
     );
